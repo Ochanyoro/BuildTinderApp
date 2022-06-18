@@ -13,8 +13,6 @@
 		82DD1FEF285CC589009A44DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DD1FEE285CC589009A44DB /* Preview Assets.xcassets */; };
 		82DD1FFA285CC776009A44DB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FF9285CC776009A44DB /* MainView.swift */; };
 		82DD1FFC285CD07C009A44DB /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FFB285CD07C009A44DB /* TabBarButtonView.swift */; };
-		82DD1FFE285D5168009A44DB /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FFD285D5168009A44DB /* AppStateManager.swift */; };
-		82DD2000285D5889009A44DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FFF285D5889009A44DB /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +23,6 @@
 		82DD1FEE285CC589009A44DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82DD1FF9285CC776009A44DB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		82DD1FFB285CD07C009A44DB /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
-		82DD1FFD285D5168009A44DB /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
-		82DD1FFF285D5889009A44DB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +55,6 @@
 		82DD1FE6285CC588009A44DB /* BuildTinderApp */ = {
 			isa = PBXGroup;
 			children = (
-				82DD1FFF285D5889009A44DB /* Extensions.swift */,
-				82DD1FFD285D5168009A44DB /* AppStateManager.swift */,
 				82DD1FE7285CC588009A44DB /* BuildTinderAppApp.swift */,
 				82DD1FE9285CC588009A44DB /* ContentView.swift */,
 				82DD1FF9285CC776009A44DB /* MainView.swift */,
@@ -150,11 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82DD1FFC285CD07C009A44DB /* TabBarButtonView.swift in Sources */,
-				82DD2000285D5889009A44DB /* Extensions.swift in Sources */,
 				82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */,
 				82DD1FFA285CC776009A44DB /* MainView.swift in Sources */,
 				82DD1FE8285CC588009A44DB /* BuildTinderAppApp.swift in Sources */,
-				82DD1FFE285D5168009A44DB /* AppStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,31 +35,31 @@ struct MainView: View {
             Color(.systemGray6)
                 .opacity(0.35)
                 .edgesIgnoringSafeArea(.vertical)
-        }
-        
-        VStack{
-            HStack {
-                Spacer()
-                TabBarButtonView(type: .fire)
+
+            VStack{
+                HStack {
+                    Spacer()
+                    TabBarButtonView(type: .fire)
+                    
+                    Spacer()
+                    TabBarButtonView(type: .star)
+                    Spacer()
+                    
+                    TabBarButtonView(type: .message)
+                    Spacer()
+                    
+                    TabBarButtonView(type: .profile)
+                    Spacer()
+                }
+                .frame(height: 100)
+                .padding(.top, 30)
                 
-                Spacer()
-                TabBarButtonView(type: .star)
-                Spacer()
+                correctViewForState()
                 
-                TabBarButtonView(type: .message)
-                Spacer()
-                
-                TabBarButtonView(type: .profile)
                 Spacer()
             }
-            .frame(height: 100)
-            .padding(.top, 30)
-            
-            correctViewForState()
-            
-            Spacer()
+            .edgesIgnoringSafeArea(.vertical)
         }
-        .edgesIgnoringSafeArea(.vertical)
     }
 }
 

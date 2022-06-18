@@ -4,6 +4,12 @@
 //
 //  Created by 大和田一裕 on 2022/06/18.
 //
+//
+//  ChatViewHeader.swift
+//  BuildTinderApp
+//
+//  Created by Nikita Thomas on 2/13/21.
+//
 
 import SwiftUI
 
@@ -13,7 +19,6 @@ struct ChatViewHeader: View {
     let name: String
     let imageURL: URL?
     let videoAction: () -> Void
-    
     
     var body: some View {
         ZStack {
@@ -32,10 +37,11 @@ struct ChatViewHeader: View {
                 
                 VStack(spacing: 6) {
                     RoundedImage(url: imageURL)
-                        .frame(height: 50)
+                        .frame(height: 40)
                     
                     Text(name)
                         .foregroundColor(Color.textSecondary)
+                    
                         .font(.system(size: 14))
                 }
                 
@@ -47,7 +53,7 @@ struct ChatViewHeader: View {
                 })
             }
             .padding(.horizontal, 22)
-            .padding(.horizontal, 10)
+            .padding(.vertical, 10)
         }
         .frame(height: 50)
     }
@@ -60,9 +66,8 @@ struct ChatViewHeader_Previews: PreviewProvider {
             name: person.name,
             imageURL: person.imageURLS.first,
             videoAction: {
-                
+                //
             }
         )
     }
 }
-

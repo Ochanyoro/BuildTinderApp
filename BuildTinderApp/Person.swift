@@ -16,5 +16,5 @@ struct Person {
 
 
 extension Person {
-    static let example =  Person(name: "Alex", imageURLS: [URL(string: "https://picsum.photos/400/300")!])
+    static let example =  Person(name: "Ochan", imageURLS: [URL(string: "https://picsum.photos/400/300")!])
 }

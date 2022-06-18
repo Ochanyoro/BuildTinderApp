@@ -19,6 +19,10 @@
 		82DD2006285D8035009A44DB /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2005285D8035009A44DB /* RoundedImage.swift */; };
 		82DD2009285D8162009A44DB /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 82DD2008285D8162009A44DB /* KingfisherSwiftUI */; };
 		82DD200C285D9BD3009A44DB /* PrifileSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD200B285D9BD3009A44DB /* PrifileSwipePromo.swift */; };
+		82DD200E285DBB15009A44DB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD200D285DBB15009A44DB /* Message.swift */; };
+		82DD2013285DBC4C009A44DB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2012285DBC4C009A44DB /* Person.swift */; };
+		82DD2015285DBD23009A44DB /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2014285DBD23009A44DB /* MessagePreview.swift */; };
+		82DD2017285DBE0C009A44DB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2016285DBE0C009A44DB /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		82DD2002285D7D09009A44DB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		82DD2005285D8035009A44DB /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		82DD200B285D9BD3009A44DB /* PrifileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrifileSwipePromo.swift; path = BuildTinderApp/PrifileSwipePromo.swift; sourceTree = SOURCE_ROOT; };
+		82DD200D285DBB15009A44DB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		82DD2012285DBC4C009A44DB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = BuildTinderApp/Person.swift; sourceTree = SOURCE_ROOT; };
+		82DD2014285DBD23009A44DB /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessagePreview.swift; path = BuildTinderApp/MessagePreview.swift; sourceTree = SOURCE_ROOT; };
+		82DD2016285DBE0C009A44DB /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 				82DD1FE9285CC588009A44DB /* ContentView.swift */,
 				82DD2001285D6D81009A44DB /* MainTabBar */,
 				82DD2004285D7D3C009A44DB /* Profile */,
+				82DD2018285DBE1F009A44DB /* Messages */,
+				82DD200F285DBB23009A44DB /* Model */,
 				82DD200A285D8625009A44DB /* HelperView */,
 				82DD1FFF285D5889009A44DB /* Extensions.swift */,
 				82DD1FED285CC589009A44DB /* Preview Content */,
@@ -112,6 +122,24 @@
 				82DD2005285D8035009A44DB /* RoundedImage.swift */,
 			);
 			path = HelperView;
+			sourceTree = "<group>";
+		};
+		82DD200F285DBB23009A44DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82DD2014285DBD23009A44DB /* MessagePreview.swift */,
+				82DD2012285DBC4C009A44DB /* Person.swift */,
+				82DD200D285DBB15009A44DB /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82DD2018285DBE1F009A44DB /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				82DD2016285DBE0C009A44DB /* MessageView.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,11 +222,15 @@
 				82DD2006285D8035009A44DB /* RoundedImage.swift in Sources */,
 				82DD2000285D5889009A44DB /* Extensions.swift in Sources */,
 				82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */,
+				82DD2013285DBC4C009A44DB /* Person.swift in Sources */,
+				82DD2017285DBE0C009A44DB /* MessageView.swift in Sources */,
 				82DD1FFA285CC776009A44DB /* MainView.swift in Sources */,
 				82DD1FE8285CC588009A44DB /* BuildTinderAppApp.swift in Sources */,
 				82DD2003285D7D09009A44DB /* ProfileView.swift in Sources */,
+				82DD200E285DBB15009A44DB /* Message.swift in Sources */,
 				82DD1FFE285D5168009A44DB /* AppStateManager.swift in Sources */,
 				82DD200C285D9BD3009A44DB /* PrifileSwipePromo.swift in Sources */,
+				82DD2015285DBD23009A44DB /* MessagePreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

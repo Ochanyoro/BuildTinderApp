@@ -13,7 +13,6 @@ enum TabBarButtonType: String{
     case message = "message.fill"
     case profile = "person.fill"
 }
-
 struct TabBarButtonView: View {
     
     var type: TabBarButtonType

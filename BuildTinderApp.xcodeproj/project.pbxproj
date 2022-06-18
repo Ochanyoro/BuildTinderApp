@@ -23,6 +23,9 @@
 		82DD2013285DBC4C009A44DB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2012285DBC4C009A44DB /* Person.swift */; };
 		82DD2015285DBD23009A44DB /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2014285DBD23009A44DB /* MessagePreview.swift */; };
 		82DD2017285DBE0C009A44DB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2016285DBE0C009A44DB /* MessageView.swift */; };
+		82DD2098285DEB19009A44DB /* ChatManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2097285DEB19009A44DB /* ChatManeger.swift */; };
+		82DD209A285DEB3D009A44DB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD2099285DEB3D009A44DB /* ChatView.swift */; };
+		82DD209C285DEB76009A44DB /* ChatViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD209B285DEB76009A44DB /* ChatViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		82DD2012285DBC4C009A44DB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = BuildTinderApp/Person.swift; sourceTree = SOURCE_ROOT; };
 		82DD2014285DBD23009A44DB /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessagePreview.swift; path = BuildTinderApp/MessagePreview.swift; sourceTree = SOURCE_ROOT; };
 		82DD2016285DBE0C009A44DB /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		82DD2097285DEB19009A44DB /* ChatManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManeger.swift; sourceTree = "<group>"; };
+		82DD2099285DEB3D009A44DB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		82DD209B285DEB76009A44DB /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				82DD2016285DBE0C009A44DB /* MessageView.swift */,
+				82DD2097285DEB19009A44DB /* ChatManeger.swift */,
+				82DD2099285DEB3D009A44DB /* ChatView.swift */,
+				82DD209B285DEB76009A44DB /* ChatViewHeader.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -221,10 +230,13 @@
 				82DD1FFC285CD07C009A44DB /* TabBarButtonView.swift in Sources */,
 				82DD2006285D8035009A44DB /* RoundedImage.swift in Sources */,
 				82DD2000285D5889009A44DB /* Extensions.swift in Sources */,
+				82DD209C285DEB76009A44DB /* ChatViewHeader.swift in Sources */,
 				82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */,
 				82DD2013285DBC4C009A44DB /* Person.swift in Sources */,
 				82DD2017285DBE0C009A44DB /* MessageView.swift in Sources */,
 				82DD1FFA285CC776009A44DB /* MainView.swift in Sources */,
+				82DD209A285DEB3D009A44DB /* ChatView.swift in Sources */,
+				82DD2098285DEB19009A44DB /* ChatManeger.swift in Sources */,
 				82DD1FE8285CC588009A44DB /* BuildTinderAppApp.swift in Sources */,
 				82DD2003285D7D09009A44DB /* ProfileView.swift in Sources */,
 				82DD200E285DBB15009A44DB /* Message.swift in Sources */,

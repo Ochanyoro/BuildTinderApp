@@ -1,5 +1,5 @@
 //
-//  LikesView.swift
+//  TopPicksView.swift
 //  BuildTinderApp
 //
 //  Created by 大和田一裕 on 2022/06/19.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LikesView: View {
+struct TopPicksView: View {
     
     @EnvironmentObject var userMng: UserManager
     @EnvironmentObject var appState: AppStateManager
@@ -19,7 +19,7 @@ struct LikesView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false, content: {
             if !user.goldSubscriber {
-                Text("Upgrade to Gold to see people who already liked you.")
+                Text("Upgrade to Tinder Gold for more Top Picks")
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
                     .foregroundColor(.textTitle)
@@ -35,7 +35,7 @@ struct LikesView: View {
                 pinnedViews: [],
                 content: {
                     ForEach(userMng.matches){ person in
-                        PersonSquare(person: person, blur: !user.goldSubscriber)
+                        PersonSquare(person: person, blur: false)
                             .frame(height: 240)
                             .onTapGesture (perform: {
                                 personTapped(person)
@@ -55,9 +55,9 @@ struct LikesView: View {
     }
 }
 
-struct LikesView_Previews: PreviewProvider {
+struct TopPicks_Previews: PreviewProvider {
     static var previews: some View {
-        LikesView()
+        TopPicksView()
             .environmentObject(UserManager())
             .environmentObject(AppStateManager())
     }

@@ -67,6 +67,6 @@ struct PrifileSwipePromo_Previews: PreviewProvider {
                 print("test")
             }
         }
-        .frame(height: 400)
+        .frame(height: 450)
     }
 }

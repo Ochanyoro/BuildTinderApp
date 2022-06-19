@@ -16,6 +16,6 @@ class MessageListVM: ObservableObject {
     }
     
     func loadPreview() {
-        self.messagePreviews = [MessagePreview.example]
+        self.messagePreviews = MessagePreview.examples
     }
 }

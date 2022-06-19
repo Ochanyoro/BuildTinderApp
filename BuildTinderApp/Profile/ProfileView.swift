@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @EnvironmentObject var userMng: UserManager
+    @EnvironmentObject var appState: AppStateManager
     
     var user: User {
         return userMng.currentUser
@@ -137,6 +138,7 @@ struct ProfileView: View {
                 ZStack {
                     Color.gray.opacity(0.15)
                     PrifileSwipePromo{
+                        appState.showPurchaseScreen()
                     }
                 }
                 .padding(.top, 18)
@@ -152,5 +154,6 @@ struct ProfileView_Previews: PreviewProvider {
         ProfileView()
             .background(Color.defaultBackground)
             .environmentObject(UserManager())
+            .environmentObject(AppStateManager())
     }
 }

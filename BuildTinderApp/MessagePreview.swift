@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MessagePreview {
+struct MessagePreview: Hashable {
     var person: Person
     var lastMessage: String
 }

@@ -60,7 +60,10 @@ struct MessageListView: View {
                 
                 VStack {
                     ForEach(vm.messagePreviews, id: \.self) { preview in
-                        MessageRowView(preview: preview)
+                        
+                        NavigationLink(destination: Text("destination"), label: {
+                            MessageRowView(preview: preview)
+                        })
                     }
                 }
                 
@@ -72,6 +75,8 @@ struct MessageListView: View {
 
 struct MessageListView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageListView()
+        NavigationView {
+            MessageListView()
+        }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82B03A25285EA5F600F00CF1 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A24285EA5F600F00CF1 /* MessageListView.swift */; };
+		82B03A27285EA68700F00CF1 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A26285EA68700F00CF1 /* MessageListVM.swift */; };
 		82DD1FE8285CC588009A44DB /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FE7285CC588009A44DB /* BuildTinderAppApp.swift */; };
 		82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FE9285CC588009A44DB /* ContentView.swift */; };
 		82DD1FEC285CC589009A44DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DD1FEB285CC589009A44DB /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82B03A24285EA5F600F00CF1 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		82B03A26285EA68700F00CF1 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		82DD1FE4285CC588009A44DB /* BuildTinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildTinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DD1FE7285CC588009A44DB /* BuildTinderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTinderAppApp.swift; sourceTree = "<group>"; };
 		82DD1FE9285CC588009A44DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				82DD2097285DEB19009A44DB /* ChatManeger.swift */,
 				82DD2099285DEB3D009A44DB /* ChatView.swift */,
 				82DD209B285DEB76009A44DB /* ChatViewHeader.swift */,
+				82B03A24285EA5F600F00CF1 /* MessageListView.swift */,
+				82B03A26285EA68700F00CF1 /* MessageListVM.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -228,10 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				82DD1FFC285CD07C009A44DB /* TabBarButtonView.swift in Sources */,
+				82B03A25285EA5F600F00CF1 /* MessageListView.swift in Sources */,
 				82DD2006285D8035009A44DB /* RoundedImage.swift in Sources */,
 				82DD2000285D5889009A44DB /* Extensions.swift in Sources */,
 				82DD209C285DEB76009A44DB /* ChatViewHeader.swift in Sources */,
 				82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */,
+				82B03A27285EA68700F00CF1 /* MessageListVM.swift in Sources */,
 				82DD2013285DBC4C009A44DB /* Person.swift in Sources */,
 				82DD2017285DBE0C009A44DB /* MessageView.swift in Sources */,
 				82DD1FFA285CC776009A44DB /* MainView.swift in Sources */,

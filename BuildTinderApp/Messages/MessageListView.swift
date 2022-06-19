@@ -61,15 +61,17 @@ struct MessageListView: View {
                 VStack {
                     ForEach(vm.messagePreviews, id: \.self) { preview in
                         
-                        NavigationLink(destination: Text("destination"), label: {
+                        NavigationLink(destination: ChatView(person: preview.person), label: {
                             MessageRowView(preview: preview)
                         })
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 
                 Spacer()
             }
         }
+        .modifier(HideNavigationView())
     }
 }
 

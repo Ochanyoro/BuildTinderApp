@@ -13,5 +13,5 @@ struct MessagePreview {
 }
 
 extension MessagePreview {
-    static let example = MessagePreview(person: Person.example, lastMessage: "Hello World")
+    static let example = MessagePreview(person: Person.example, lastMessage: "Hello there. How are you doing today? How's the weather right now your area")
 }

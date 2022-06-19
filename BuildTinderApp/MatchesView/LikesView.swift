@@ -33,13 +33,12 @@ struct LikesView: View {
                 spacing: nil,
                 pinnedViews: [],
                 content: {
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
+                    ForEach(userMng.matches){ person in
+                        PersonSquare(person: person, blur: !user.goldSubscriber)
+                    }
+                    .frame(height: 240)
                 })
+            .padding(.horizontal, 6)
         })
     }
 }

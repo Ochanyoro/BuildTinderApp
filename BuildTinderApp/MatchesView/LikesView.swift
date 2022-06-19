@@ -10,6 +10,7 @@ import SwiftUI
 struct LikesView: View {
     
     @EnvironmentObject var userMng: UserManager
+    @EnvironmentObject var appState: AppStateManager
     
     private var user: User {
         return userMng.currentUser
@@ -33,19 +34,31 @@ struct LikesView: View {
                 spacing: nil,
                 pinnedViews: [],
                 content: {
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                    Text("kkkkkkkkkk")
-                })
+                    ForEach(userMng.matches){ person in
+                        PersonSquare(person: person, blur: !user.goldSubscriber)
+                            .frame(height: 240)
+                            .onTapGesture (perform: {
+                                personTapped(person)
+                            })
+                    }
+            })
+            .padding(.horizontal, 6)
         })
+    }
+    
+    func personTapped(_ person: Person) {
+        if  user.goldSubscriber {
+            appState.showPersonsProfile(person)
+        } else {
+            appState.showPurchaseScreen()
+        }
     }
 }
 
 struct LikesView_Previews: PreviewProvider {
     static var previews: some View {
-        LikesView().environmentObject(UserManager())
+        LikesView()
+            .environmentObject(UserManager())
+            .environmentObject(AppStateManager())
     }
 }

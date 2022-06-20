@@ -18,6 +18,8 @@ struct Subscription: Identifiable {
     var savePercent: Int?
     var tagLine: TagLine = .none
     
+    
+    
     enum TagLine: String {
         case mostPopular = "MOST POPULAR"
         case bestValue = "BEST VALUE"
@@ -26,7 +28,7 @@ struct Subscription: Identifiable {
 }
 
 extension Subscription {
-    static let example = Subscription(
+    static let example1 = Subscription(
         month: 6,
         monthlyCost: 15.00,
         totalCost: 89.99,

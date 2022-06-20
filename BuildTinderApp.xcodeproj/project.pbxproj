@@ -18,6 +18,8 @@
 		82B03A38285F634300F00CF1 /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A37285F634300F00CF1 /* MatchesView.swift */; };
 		82B03A3A2860892500F00CF1 /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A392860892500F00CF1 /* PurchasePopup.swift */; };
 		82B03A3D28609CE400F00CF1 /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A3C28609CE400F00CF1 /* PurchaseSwipePromo.swift */; };
+		82B03A402860A06600F00CF1 /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A3F2860A06600F00CF1 /* PurchaseOptionView.swift */; };
+		82B03A432860A0D100F00CF1 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B03A422860A0D100F00CF1 /* Subscription.swift */; };
 		82DD1FE8285CC588009A44DB /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FE7285CC588009A44DB /* BuildTinderAppApp.swift */; };
 		82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD1FE9285CC588009A44DB /* ContentView.swift */; };
 		82DD1FEC285CC589009A44DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DD1FEB285CC589009A44DB /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		82B03A37285F634300F00CF1 /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
 		82B03A392860892500F00CF1 /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
 		82B03A3C28609CE400F00CF1 /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
+		82B03A3F2860A06600F00CF1 /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
+		82B03A422860A0D100F00CF1 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		82DD1FE4285CC588009A44DB /* BuildTinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildTinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DD1FE7285CC588009A44DB /* BuildTinderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTinderAppApp.swift; sourceTree = "<group>"; };
 		82DD1FE9285CC588009A44DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			children = (
 				82B03A392860892500F00CF1 /* PurchasePopup.swift */,
 				82B03A3C28609CE400F00CF1 /* PurchaseSwipePromo.swift */,
+				82B03A3F2860A06600F00CF1 /* PurchaseOptionView.swift */,
 			);
 			path = Purchase;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				82DD2012285DBC4C009A44DB /* Person.swift */,
 				82DD200D285DBB15009A44DB /* Message.swift */,
 				82B03A2C285F288600F00CF1 /* User.swift */,
+				82B03A422860A0D100F00CF1 /* Subscription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,12 +302,14 @@
 				82DD1FEA285CC588009A44DB /* ContentView.swift in Sources */,
 				82B03A27285EA68700F00CF1 /* MessageListVM.swift in Sources */,
 				82DD2013285DBC4C009A44DB /* Person.swift in Sources */,
+				82B03A432860A0D100F00CF1 /* Subscription.swift in Sources */,
 				82DD2017285DBE0C009A44DB /* MessageView.swift in Sources */,
 				82DD1FFA285CC776009A44DB /* MainView.swift in Sources */,
 				82DD209A285DEB3D009A44DB /* ChatView.swift in Sources */,
 				82DD2098285DEB19009A44DB /* ChatManeger.swift in Sources */,
 				82DD1FE8285CC588009A44DB /* BuildTinderAppApp.swift in Sources */,
 				82DD2003285D7D09009A44DB /* ProfileView.swift in Sources */,
+				82B03A402860A06600F00CF1 /* PurchaseOptionView.swift in Sources */,
 				82DD200E285DBB15009A44DB /* Message.swift in Sources */,
 				82B03A3D28609CE400F00CF1 /* PurchaseSwipePromo.swift in Sources */,
 				82DD1FFE285D5168009A44DB /* AppStateManager.swift in Sources */,

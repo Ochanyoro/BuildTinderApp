@@ -16,7 +16,7 @@ struct MainView: View {
     func correctViewForState() -> some View{
         switch appState.selectedTab{
         case .fire:
-            let view = Text("fire")
+            let view = HomeView()
             return AnyView(view)
         case .star:
             let view = MatchesView()
@@ -63,8 +63,8 @@ struct MainView: View {
                 
                 if appState.showPurchasePopup {
                     PurchasePopup(isVisible: $appState.showPurchasePopup)
-                        .animation(.spring(response: 0.5, dampingFraction: 0.75, blendDuration: 0.5))
-                        .transition(.offset(y: 800))
+                        .animation(.spring(response: 0.4, dampingFraction: 0.7, blendDuration: 0.5))
+                        .transition(.offset(y: 900))
                         
                 }
             }

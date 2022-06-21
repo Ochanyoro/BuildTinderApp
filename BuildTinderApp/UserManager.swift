@@ -7,12 +7,12 @@
 
 import Foundation
 
+
 class UserManager: ObservableObject {
     @Published var currentUser: User = User(name: "", age: 0, jobTitle: "")
     @Published var matches: [Person] = []
     @Published var topPicks: [Person] = []
     @Published var cardPeople: [Person] = []
-    
     
     init() {
         loadUser()
@@ -25,7 +25,7 @@ class UserManager: ObservableObject {
         self.cardPeople = Person.examples
     }
     
-    private func loadTopPicks(){
+    private func loadTopPicks() {
         self.topPicks = Person.examples.shuffled()
     }
     
@@ -33,23 +33,22 @@ class UserManager: ObservableObject {
         self.currentUser = User.example
     }
     
-    private func loadMatches(){
+    private func loadMatches() {
         self.matches = Person.examples
     }
     
     public func swipe(_ person: Person, _ direction: SwipeDirection) {
         cardPeople.removeLast()
-        
+        // Networking to backend
     }
     
-    public func superLike(_ person: Person){
+    public func superLike(_ person: Person) {
         cardPeople.removeLast()
+        // Networking to backend
     }
-    
-    enum SwipeDirection {
-        case like
-        case nope
-    }
-    
 }
 
+enum SwipeDirection {
+    case like
+    case nope
+}

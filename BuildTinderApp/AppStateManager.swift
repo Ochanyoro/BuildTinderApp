@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AppStateManager: ObservableObject{
+class AppStateManager: ObservableObject {
     
     @Published var selectedTab: TabBarButtonType = .fire
     
@@ -22,4 +22,5 @@ class AppStateManager: ObservableObject{
     public func showPurchaseScreen() {
         self.showPurchasePopup = true
     }
+    
 }

@@ -18,6 +18,9 @@ struct FullScreenCardView: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
+            Color.white
+                .edgesIgnoringSafeArea(.all)
+            
             ScrollView(showsIndicators: false){
                 VStack (spacing: 0) {
                     CardImageScroller(

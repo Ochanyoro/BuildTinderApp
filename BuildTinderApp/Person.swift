@@ -13,6 +13,10 @@ struct Person:Hashable, Identifiable {
     var name: String
     var imageURLS: [URL]
     var bio: String
+    var distance: Int
+    
+    var bioLong: String
+    
     var age: Int
     
     // User for card manipulation
@@ -31,6 +35,8 @@ extension Person {
                      URL(string: "https://picsum.photos/400/302")!,
                      URL(string: "https://picsum.photos/400/303")!],
         bio: "This is my bio. I really love dogs. I really love dogs. I really love dogs. I really love dogs.",
+        distance: 20,
+        bioLong: "This is my bio. I really love dogs. I really love dogs. I really love dogs. I really love dogs.",
         age: 23
     )
     static let example2 = Person(
@@ -39,6 +45,8 @@ extension Person {
             URL(string: "https://picsum.photos/400/301")!
         ],
         bio: "I really love dogs",
+        distance: 25,
+        bioLong: "This is my bio. I really love dogs. I really love dogs. I really love dogs. I really love dogs.",
         age:22
     )
     
@@ -48,14 +56,20 @@ extension Person {
         Person(name: "wadao",
                imageURLS: [URL(string: "https://picsum.photos/400/302")!],
                bio: "I love hiking",
+               distance: 30,
+               bioLong: "This is my bio. I really love dogs. I really love dogs. I really love dogs. I really love dogs.",
                age: 30),
         Person(name: "okazu",
                imageURLS: [URL(string: "https://picsum.photos/400/303")!],
                bio: "I am really boring",
+               distance: 40,
+               bioLong: "This is my bio. I really love dogs. I really love dogs. I really love dogs. I really love dogs.",
                age: 27),
         Person(name: "oka",
                imageURLS: [URL(string: "https://picsum.photos/400/304")!],
                bio: "I like to skateboard",
+               distance: 50,
+               bioLong: "This is my bio. I really love dogs. I really love dogs. I really love dogs. I really love dogs.",
                age: 24)
     ]
 }

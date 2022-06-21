@@ -14,6 +14,8 @@ struct FullScreenCardView: View {
     
     let screen = UIScreen.main.bounds
     
+    @EnvironmentObject var useMng: UserManager
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView(showsIndicators: false){
@@ -70,7 +72,7 @@ struct FullScreenCardView: View {
                     Spacer().frame(height: 32)
                     
                     VStack(spacing: 24) {
-                        Button(action: { }, label: {
+                        Button(action: { showActionSheet() }, label: {
                             VStack(spacing: 8) {
                                 Text("SHARE \(person.name.uppercased())'S PROFILE")
                                     .font(.system(size: 16, weight: .medium))
@@ -93,8 +95,45 @@ struct FullScreenCardView: View {
                 }
             }
             
-            Text("TEst")
+            HStack(spacing: 20) {
+                Spacer()
+                CircleButtonView(type: .no){
+                    fullscreenMode = false
+                    useMng.swipe(person, .nope)
+                }
+                .frame(height: 50)
+                
+                CircleButtonView(type: .star){
+                    fullscreenMode = false
+                    useMng.superLike(person)
+                }
+                .frame(height: 45)
+
+                CircleButtonView(type: .heart){
+                    fullscreenMode = false
+                    useMng.swipe(person, .like)
+                }
+                .frame(height: 50)
+                
+                Spacer()
+            }
+            .padding(.top, 25)
+            .padding(.bottom, 45)
+            .edgesIgnoringSafeArea(.all)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.2),
+                                                           Color.white]), startPoint: .top, endPoint: .bottom)
+            )
         }
+        .edgesIgnoringSafeArea(.bottom)
+        .padding(.top, 40)
+    }
+
+    func showActionSheet() {
+        let items: [Any] = ["What do you think about \(person.name)? \n"]
+        let av = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
     }
 }
 
